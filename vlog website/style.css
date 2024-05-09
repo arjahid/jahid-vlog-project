@@ -1,0 +1,392 @@
+/*  common code start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+   
+        font-family: "Roboto", sans-serif;
+      
+      
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1 rem 0.1 rem 0.1 rem #c4c4c4, -0.1rem 0 rem 0.1 rem #c4c4c4;
+}
+.text-justify{
+    text-align: ;
+}
+/* common code ends here */
+/* Header Start here */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 2rem 1 rem;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        min-height: 5vh;
+    }
+    
+    .logo-1{
+        height: 90px;
+        padding: 10px;
+border: 3px solid green;
+border-radius: 30%;
+}
+nav li:last-child{
+    margin-right: 0;
+    padding: 1 rem;
+}
+nav li{
+    display: inline;
+    margin: right 2 rem;
+    transition: all 0.5s;
+}
+nav li:hover a{
+    background-color: #1913d5;
+    cursor: pointer;
+    
+    
+
+}
+nav li a{
+    font-size: 20px;
+    padding: 8px;
+    color: #fff ;
+    transition: all 0.5s;
+}
+
+/* Header End here */
+
+/* Responsive start here */
+@media (max-width:992px){
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+}
+ @media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    #blog-banner-section article{
+        width: 80%;
+    }
+    
+}   
+@media (max-width: 600px){
+    html{
+        font-size: 45%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-left: 2.5rem;
+    }
+    nav li {
+        display: block;
+        margin-right: 0;
+        #blog-banner-section {
+            min-height: auto;
+        }
+        #blog-banner-section article{
+            width: 90%;
+        }
+
+margin: 1 rem 0;    }
+}
+    
+@media (max-width:400px){
+    
+}   
+/* Responsive Ends here
+/* Banner Section Start here */
+
+
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 4px;
+}
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+
+}
+.banner-heading{
+    display: inline;
+    font-size: 40px;
+    background-color: black;
+    color: #fafafa;
+    text-align: center;
+}
+.bannerdescription{
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    margin: 4px 0 3px 0;
+}
+.cloudy-image{
+    height: 90px;
+    transition: 3s;
+    margin-top: 10px;
+    margin-bottom: 310px;
+    
+}
+.cloudy-image:hover{
+   
+    transform: rotate(360deg);
+}
+.cloudy-image2{
+    height: 90px;
+    transition: 3s;
+    margin-top: 10px;
+    margin-left: 240px;
+    
+    
+}
+.cloudy-image2:hover{
+   
+    transform: rotate(360deg);
+}
+
+
+.banner-image{
+    width: 25 rem;
+    height: 40rem;
+    border: 3px solid black;
+}
+
+/* Banner Section end here */
+/* blog about start here */
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+    
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(118, 160, 160);
+}
+.card{
+    width: 225px;
+    height: 280px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:  0px 2px 4px rgb(red, green, blue);
+    margin: 5px;
+   
+}
+.education{
+    height: 120px;
+    padding: 20px;
+    margin: 10px;
+    
+    
+    margin-left: 60px;
+}
+.edu{
+    padding: 2px;
+    margin-left: 60px;
+    
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-content{
+   justify-content: center;
+
+}
+.card-content ul li{
+    margin: 5px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.card:hover{
+    background-color: rgb(92, 105, 223);
+    box-shadow: 2px 3px 4px 5px blueviolet;
+    transition: all 1s;
+    transform:rotate(5deg);
+}
+.card-btn{
+    border: 3px solid rgb(170, 109, 109);
+   
+}
+.card-btn:hover{
+    border: 2px solid rgb(59, 168, 101);
+}
+/* Archive start herhe */
+.archive-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+    
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(186, 94, 247);}
+
+    .archive{
+        width: 225px;
+        height: 280px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow:  0px 2px 4px rgb(red, green, blue);
+        margin: 5px;
+       
+    } 
+    .archive:hover{
+        background-color: rgb(226, 180, 29);
+        box-shadow: 2px 3px 4px 5px rgb(206, 14, 142);
+        transition: all 1s;
+        transform:scale(1.5);
+    }  
+.download{
+    height: 150px;
+}
+.download2{
+    height: 150px;
+}
+.download3{
+    height: 150px;
+}
+.arc-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: auto;
+  
+}
+/* archive ends here */
+
+/*  */
+.container1{
+    background-color: #cac9dd;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 12px 0 ;
+    /
+    margin-bottom: 16px; /
+    resize: vertical;
+
+}
+.contract{
+    height: 300px;
+    
+}
+#fnmae{
+    background-color: #b1afee;
+    height: 30px;
+    padding: 20px;
+}
+#lname{
+    background-color: #b1afee;
+    height: 30px;
+    padding: 20px;
+
+}
+#Country{
+    background-color: #b1afee;
+    height: 10px;
+    padding: 15px;
+
+}
+#subject{
+    height: 30px;
+    padding: 12px;
+    margin: 10px 5px;
+}
+#Email{
+    background-color: #b1afee;
+    height: 30px;
+    padding: 20px;
+
+}
+.laugh{
+    height: 300px;
+    text-align: center;
+    margin: 120px 20px 30px 250px;
+}
+.prog{
+    height: 300px;
+    text-align: center;
+    margin-bottom: 70px;
+    
+}
+.laugh:hover{
+    transform: rotate(15deg);
+    transition: 1s;
+    
+}
+.prog:hover{
+    transform:rotate(-10deg);
+    transition: 1s;
+}
+/*  */
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .social{
+    padding: 10px;
+    margin: 20px 0px 0px 590px;
+  }
